@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
 
 <head>
-    <title>Turbo Tyres Hull</title>
+    <title>Turbo Tyres Hull - Fast and Affordable Tyre Replacement Services</title>
     <meta charset="utf-8">
-    <!--[if IE]>
+    <meta name="description" content="Contact us for fast and courteous roadside tyre replacement in Hull and surrounding areas. We offer new and part-worn tyres, locking wheel nut removal, puncture repair, and wheel balancing services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <![endif]-->
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/main.css" id="color-switcher-link" rel="stylesheet">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <noscript>
+        <style>
+            .preloader {
+                display: none;
+            }
+        </style>
+    </noscript>
 
-    <!--[if lt IE 9]>
-    <script src="js/vendor/html5shiv.min.js"></script>
-    <script src="js/vendor/respond.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <![endif]-->
-
-    <meta name="description" content="Turbo Tyres Hull">
-
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Turbo Tyres Hull",
+            "description": "Fast, courteous, and inexpensive roadside tyre replacement in Hull and surrounding areas.",
+            "telephone": "+44 7354 772107",
+            "url": "http://www.turbotyreshull.com/"
+        }
+    </script>
 </head>
 
 <body>
-<!--[if lt IE 9]>
-<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a
-        href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.
-</div>
-<![endif]-->
-
+<noscript>
+    <div class="bg-danger text-center">
+        You need to enable JavaScript to run this website.
+    </div>
+</noscript>
 <div class="preloader">
     <div class="preloader_image"></div>
 </div>
@@ -95,8 +90,6 @@
                                     <p class="big grey">
                                         <span class="logo_text">
 									<span class="highlight">Turbo Tyres Hull</span>
-                                            <br>
-									<span>Tyre replacement</span>
 								</span>
                                         <br>
                                     </p>
@@ -161,16 +154,6 @@
                         </nav>
                         <!-- eof main side nav -->
                     </div>
-
-
-                    <div class="side_header_social topmargin_30">
-							<span>
-								<a class="social-icon color-bg-icon rounded-icon soc-facebook" href="https://www.facebook.com/breakdown.hull"></a>
-								<a class="social-icon color-bg-icon rounded-icon soc-twitter" href="#"></a>
-								<a class="social-icon color-bg-icon rounded-icon soc-google" href="#"></a>
-							</span>
-                    </div>
-
                 </div>
             </div>
         </header>
@@ -416,11 +399,18 @@
     <!-- eof #box_wrapper -->
 </div>
 <!-- eof #canvas -->
-
-<script src="js/compressed.js"></script>
-<script src="js/main.js"></script>
-<script src="js/vendor/jquery-jvectormap-2.0.3.min.js"></script>
-<script src="js/vendor/jquery-jvectormap-world-merc.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollIcons = document.querySelectorAll('.scroll-icon');
+            scrollIcons.forEach(function(icon) {
+                icon.innerHTML = '<a class="to_animate" data-animation="floating" href="#services"><i class="towyicon-mouse grey"></i> Scroll</a>';
+            });
+        });
+</script>
+<script src="js/compressed.js" defer></script>
+<script src="js/main.js" defer></script>
+<script src="js/vendor/jquery-jvectormap-2.0.3.min.js" defer></script>
+<script src="js/vendor/jquery-jvectormap-world-merc.js" defer></script>
 
 
 </body>
