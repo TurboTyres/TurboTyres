@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <title>Turbo Tyres Hull</title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <![endif]-->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/main.css" id="color-switcher-link" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <![endif]-->
+
+    <meta name="description" content="Turbo Tyres Hull">
+
+</head>
+
+<body>
+<!--[if lt IE 9]>
+<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a
+        href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.
+</div>
+<![endif]-->
+
+<div class="preloader">
+    <div class="preloader_image"></div>
+</div>
+
+<!-- search modal -->
+<div aria-labelledby="search_modal" class="modal" id="search_modal" role="dialog" tabindex="-1">
+    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+    </button>
+    <div class="widget widget_search">
+        <form action="./" class="searchform search-form form-inline" method="get">
+            <div class="form-group">
+                <label for="modal-search-input"></label><input class="form-control" id="modal-search-input" name="search" placeholder="Search keyword"
+                                                               type="text" value="">
+            </div>
+            <button class="theme_button" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+<!-- Unyson messages modal -->
+<div class="modal fade" id="messages_modal" role="dialog" tabindex="-1">
+    <div class="fw-messages-wrap ls with_padding">
+        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+        <!--
+    <ul>
+        <li>Message To User</li>
+    </ul>
+    -->
+
+    </div>
+</div>
+<!-- eof .modal -->
+
+<!-- wrappers for visual page editor and boxed version of template -->
+<div id="canvas">
+    <div id="box_wrapper">
+
+        <!-- template sections -->
+
+        <section class="intro_section page_mainslider ds">
+            <img alt="" src="images/slide01.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <div class="slide_description_wrapper">
+                            <div class="slide_description">
+                                <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                    <p class="big grey">
+                                        <span class="logo_text">
+									<span class="highlight">Turbo Tyres Hull</span>
+                                            <br>
+									<span>Tyre replacement</span>
+								</span>
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="intro-layer to_animate" data-animation="fadeInUp">
+                                    <p class="lightfont">
+                                        Fast, courteous and inexpensive roadside
+                                        <br> tyre replacement in Hull and surrounding areas.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- eof .slide_description -->
+                        </div>
+                        <!-- eof .slide_description_wrapper -->
+                    </div>
+                    <!-- eof .col-* -->
+                </div>
+                <!-- eof .row -->
+            </div>
+            <!-- eof .container -->
+            <div class="scroll-icon greylinks">
+                <div class="to_animate" data-animation="floating">
+                    <a class="to_animate" data-animation="floating" href="#services">
+                        <i class="towyicon-mouse grey"></i>
+                        Scroll
+                    </a>
+                </div>
+            </div>
+        </section>
+        <header class="page_header_side ds">
+				<span class="toggle_menu_side">
+					<span></span>
+				</span>
+            <div class="scrollbar-macosx">
+                <div class="side_header_inner">
+                    <div class="text-center bottommargin_40">
+                        <a class="logo" href="./">
+                            <img alt="" src="images/logo.png">
+                            <span class="logo_text">
+									<span class="highlight">Turbo Tyres Hull</span>
+									<span>Tyre Replacement</span>
+								</span>
+                        </a>
+                    </div>
+                    <div class="header-side-menu darklinks">
+                        <!-- main side nav start -->
+                        <nav class="mainmenu_side_wrapper">
+                            <ul class="nav menu-side-click">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">Gallery</a>
+                                </li>
+<!--                                <li>-->
+<!--                                    <a href="#reviews">Reviews</a>-->
+<!--                                </li>-->
+                            </ul>
+                        </nav>
+                        <!-- eof main side nav -->
+                    </div>
+
+
+                    <div class="side_header_social topmargin_30">
+							<span>
+								<a class="social-icon color-bg-icon rounded-icon soc-facebook" href="https://www.facebook.com/breakdown.hull"></a>
+								<a class="social-icon color-bg-icon rounded-icon soc-twitter" href="#"></a>
+								<a class="social-icon color-bg-icon rounded-icon soc-google" href="#"></a>
+							</span>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section class="ds columns_margin_0 columns_padding_0 table_section table_section_lg overflow-hidden"
+                 id="contacts">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <div class="with_icon_bg with_padding_small with_skew_bg skew_right main_bg_color cs">
+                            <div class="background-icon-wrap">
+                                <i class="towyicon-clock background-icon"></i>
+                            </div>
+                            <div class="teaser media small-teaser topmargin_0 inline-block">
+                                <div class="media-left media-middle">
+                                    <div class="teaser_icon main_bg_color with_shadow round size_small">
+                                        <i class="towyicon-clock"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h3 class="text-uppercase grey margin_0">
+                                        <strong>fast</strong> & reliable
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="with_padding_small">
+                            <h3 class="text-uppercase highlight big margin_0">
+                                <div class="teaser media small-teaser topmargin_0 inline-block">
+                                    <div class="media-left media-middle">
+                                        <div class="teaser_icon main_bg_color with_shadow round size_small">
+                                            <i class="towyicon-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h3 class="text-uppercase grey margin_0">
+                                            <strong><a
+                                                    href="tel:+447354772107"><strong>07354772107</strong></a></strong>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <div class="with_icon_bg with_padding_small with_skew_bg skew_left main_bg_color cs">
+                            <div class="background-icon-wrap">
+                                <i class="towyicon-phone background-icon"></i>
+                            </div>
+                            <div class="teaser media small-teaser topmargin_0 inline-block">
+                                <div class="media-left media-middle">
+                                    <div class="teaser_icon main_bg_color with_shadow round size_small">
+                                        <i class="towyicon-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body media-middle">
+                                    <h3 class="text-uppercase grey margin_0">
+                                        Tyre Replacement
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ls section_padding_top_150 section_padding_bottom_120 columns_margin_0" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="section_header numbered-header">Our
+                            <strong>Services</strong>
+                        </h2>
+                        <p class="small-text">Tyre fitting</p>
+                        <hr class="divider_30_3 zebra_bg">
+                    </div>
+                </div>
+                <div class="row topmargin_30">
+                    <div class="col-md-12">
+                        <div class="with_padding">
+                            <div class="teaser text-center">
+                                <img alt="" src="images/icons/flatTyre.png"/>
+                                <h4 class="regular">
+                                    Tyre services
+                                </h4>
+                                <p>&#x2022; New tyres<br> &#x2022; Part-worn tyres<br> &#x2022; Locking wheel nut removal<br> &#x2022; Puncture repair<br> &#x2022; Wheel balancing<br>
+                                    We come to you, whether you're on the motorway, at home, or anywhere!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_20" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2 class="section_header numbered-header">Our
+                            <strong>Gallery</strong>
+                        </h2>
+                        <p class="small-text">anywhere, anytime towing</p>
+                        <hr class="divider_30_3 zebra_bg">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="owl-carousel" data-dots="true" data-items="3" data-responsive-lg="3"
+                             data-responsive-md="2" data-responsive-sm="2" data-responsive-xs="1"
+                             id="gallery-owl-carousel">
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery2.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery3.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery4.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery5.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery6.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery7.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+
+                            <div class="vertical-item content-padding gallery-extended-item with_border text-center">
+                                <div class="item-media">
+                                    <img alt="" src="images/gallery/recovery8.jpg">
+                                    <div class="media-links"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ls background_cover page_testimonials section_padding_50" id="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel" data-margin="0" data-nav="true" data-responsive-lg="1"
+                             data-responsive-md="1" data-responsive-sm="1">
+                            <blockquote>
+                                <img alt="" src="images/faces/01.jpg"/> Brilliant service, went above and beyond to get
+                                my tyre sorted for me! Great value for money! Would highly recommend to anyone!
+                                <div class="item-meta lightfont">
+                                    <h5 class="highlight">Sam Anderson</h5>
+                                </div>
+                            </blockquote>
+
+                            <blockquote>
+                                <img alt="" src="images/faces/02.jpg"/> 5* service! Couldn't have asked for a better service. My tyre
+                                was badly damaged on something today. I was gutted I was about to cancel my easter plans for the
+                                 weekend. Until I found these guys came out within 30 mins amazing price!! Would use again!
+                                <div class="item-meta lightfont">
+                                    <h5 class="highlight">Emily Duckworth</h5>
+                                </div>
+                            </blockquote>
+
+                            <blockquote>
+                                <img alt="" src="images/faces/02.jpg"/> Lads are smashing. Had an issue with one of the bolts but the chap
+                                 advised us with great help. Brilliant price based on part worn fitted and come out in 10mins at 11pm.
+                                Customer service was outstanding and did the job quickly and professionally. 100% will be using them
+                                 again as my own car needs a service soon :)
+                                <div class="item-meta lightfont">
+                                    <h5 class="highlight">Callum</h5>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page_footer ds section_padding_top_65 section_padding_bottom_50 columns_margin_bottom_40">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6 to_animate" data-animation="fadeInUp">
+
+                        <a class="logo" href="./">
+                            <img alt="" src="images/logo.png">
+                            <span class="logo_text">
+									<span class="highlight">Turbo Tyres Hull</span>
+									<span>Tyre replacement</span>
+								</span>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 to_animate" data-animation="fadeInUp">
+                        <div class="widget widget_text topmargin_15">
+                            <h3 class="widget-title">Get in
+                                <strong>Touch</strong>
+                            </h3>
+                            <hr class="divider_30_3 zebra_bg divider_left">
+                            <div class="media small-teaser">
+                                <div class="media-left">
+                                    <i class="fa fa-envelope highlight fontsize_18"></i>
+                                </div>
+                                <div class="media-body greylinks">
+                                    <a href="mailto:turbotyres123@gmail.com">turbotyres123@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="media small-teaser">
+                                <div class="media-left">
+                                    <i class="fa fa-phone highlight fontsize_18"></i>
+                                </div>
+                                <div class="media-body">
+                                    <a href="tel:+447354772107">07354772107</a>
+                                </div>
+                            </div>
+                            <div class="media small-teaser">
+                                <div class="media-left">
+                                    <i class="fa fa-phone highlight fontsize_18"></i>
+                                </div>
+                                <div class="media-body">
+                                    <a href="tel:+441482803606">01482803606</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section class="ds ms page_copyright section_padding_15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="lightfont">Turbo Tyres Hull
+                            <i aria-hidden="true" class="fa fa-heart highlight"></i> All Rights Reserved &copy; 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- eof #box_wrapper -->
+</div>
+<!-- eof #canvas -->
+
+<script src="js/compressed.js"></script>
+<script src="js/main.js"></script>
+<script src="js/vendor/jquery-jvectormap-2.0.3.min.js"></script>
+<script src="js/vendor/jquery-jvectormap-world-merc.js"></script>
+
+
+</body>
+
+</html>
