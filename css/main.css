@@ -7242,6 +7242,8 @@ body.active-side-header:after {
 }
 
 .toggle_menu_side {
+	border: 0;
+	padding: 0;
 	position: absolute;
 	top: 15px;
 	right: -75px;
@@ -14264,4 +14266,12 @@ tr.item-editable .media-left img {
 	margin-left: -40px;
 	margin-right: -40px;
 	padding: 20px 40px;
+}
+
+.toggle_menu_side:focus-visible { outline: 3px solid #ffc600; outline-offset: 4px; }
+.intro_section h1.big { font-weight: 300; margin: 0; }
+
+.owl-carousel [role="button"]:focus-visible { outline: 3px solid #c49100; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  .to_animate, .animated { animation: none !important; visibility: visible !important; opacity: 1 !important; }
 }

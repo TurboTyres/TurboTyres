@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en-GB">
 
 <head>
     <title>Turbo Tyres Hull - Fast and Affordable Tyre Replacement Services</title>
@@ -15,67 +16,26 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <noscript>
         <style>
-            .preloader {
-                display: none;
-            }
+            .preloader, .toggle_menu_side { display: none; }
+            .to_animate { visibility: visible !important; opacity: 1 !important; }
+            .owl-carousel { display: block; }
         </style>
     </noscript>
 
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "Turbo Tyres Hull",
             "description": "Fast, courteous, and inexpensive mobile tyre replacement in Hull and surrounding areas.",
             "telephone": "+44 7354 772107",
-            "url": "http://www.turbotyreshull.com/"
+            "url": "https://www.turbotyreshull.com/"
         }
     </script>
 </head>
 
 <body>
-<noscript>
-    <div class="bg-danger text-center">
-        You need to enable JavaScript to run this website.
-    </div>
-</noscript>
-<div class="preloader">
-    <div class="preloader_image"></div>
-</div>
-
-<!-- search modal -->
-<div aria-labelledby="search_modal" class="modal" id="search_modal" role="dialog" tabindex="-1">
-    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-			<span aria-hidden="true">
-				<i class="rt-icon2-cross2"></i>
-			</span>
-    </button>
-    <div class="widget widget_search">
-        <form action="./" class="searchform search-form form-inline" method="get">
-            <div class="form-group">
-                <label for="modal-search-input"></label><input class="form-control" id="modal-search-input" name="search" placeholder="Search keyword"
-                                                               type="text" value="">
-            </div>
-            <button class="theme_button" type="submit">Search</button>
-        </form>
-    </div>
-</div>
-
-<!-- Unyson messages modal -->
-<div class="modal fade" id="messages_modal" role="dialog" tabindex="-1">
-    <div class="fw-messages-wrap ls with_padding">
-        <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-        <!--
-    <ul>
-        <li>Message To User</li>
-    </ul>
-    -->
-
-    </div>
-</div>
-<!-- eof .modal -->
-
-<!-- wrappers for visual page editor and boxed version of template -->
+<div class="preloader" aria-hidden="true"><div class="preloader_image"></div></div>
 <div id="canvas">
     <div id="box_wrapper">
 
@@ -89,12 +49,11 @@
                         <div class="slide_description_wrapper">
                             <div class="slide_description">
                                 <div class="intro-layer to_animate" data-animation="fadeInUp">
-                                    <p class="big grey">
+                                    <h1 class="big grey">
                                         <span class="logo_text">
 									<span class="highlight">Turbo Tyres Hull</span>
 								</span>
-                                        <br>
-                                    </p>
+                                    </h1>
                                 </div>
                                 <div class="intro-layer to_animate" data-animation="fadeInUp">
                                     <p class="lightfont">
@@ -121,10 +80,8 @@
             </div>
         </section>
         <header class="page_header_side ds">
-				<span class="toggle_menu_side">
-					<span></span>
-				</span>
-            <div class="scrollbar-macosx">
+				<button class="toggle_menu_side" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span aria-hidden="true"></span></button>
+            <div class="scrollbar-macosx" id="site-menu" inert>
                 <div class="side_header_inner">
                     <div class="text-center bottommargin_40">
                         <a class="logo" href="./">
@@ -151,9 +108,8 @@
                                 <li>
                                     <a href="#areas">Areas we cover</a>
                                 </li>
-<!--                                <li>-->
-<!--                                    <a href="#reviews">Reviews</a>-->
-<!--                                </li>-->
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#contacts">Contact</a></li>
                             </ul>
                         </nav>
                         <!-- eof main side nav -->
@@ -186,7 +142,7 @@
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="with_padding_small">
-                            <h3 class="text-uppercase highlight big margin_0">
+                            <div class="text-uppercase highlight big margin_0">
                                 <div class="teaser media small-teaser topmargin_0 inline-block">
                                     <div class="media-left media-middle">
                                         <div class="teaser_icon main_bg_color with_shadow round size_small">
@@ -200,7 +156,7 @@
                                         </h3>
                                     </div>
                                 </div>
-                            </h3>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 text-center">
@@ -432,7 +388,7 @@
                 <div class="row">
                     <div class="col-sm-12 text-center">
                         <p class="lightfont">Turbo Tyres Hull
-                            <i aria-hidden="true" class="fa fa-heart highlight"></i> All Rights Reserved &copy; 2023</p>
+                            <i aria-hidden="true" class="fa fa-heart highlight"></i> All Rights Reserved &copy; 2023–2026</p>
                     </div>
                 </div>
             </div>
@@ -442,18 +398,8 @@
     <!-- eof #box_wrapper -->
 </div>
 <!-- eof #canvas -->
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var scrollIcons = document.querySelectorAll('.scroll-icon');
-            scrollIcons.forEach(function(icon) {
-                icon.innerHTML = '<a class="to_animate" data-animation="floating" href="#services"><i class="towyicon-mouse grey"></i> Scroll</a>';
-            });
-        });
-</script>
 <script src="js/compressed.js" defer></script>
 <script src="js/main.js" defer></script>
-<script src="js/vendor/jquery-jvectormap-2.0.3.min.js" defer></script>
-<script src="js/vendor/jquery-jvectormap-world-merc.js" defer></script>
 
 
 </body>
