@@ -63,7 +63,9 @@
 
 .landing-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; }
 .landing-reviews .landing-review { margin: 0; }
-.landing-reviews blockquote { margin: 0 0 12px; font-size: 16px; line-height: 1.6; }
+.landing-reviews blockquote { margin: 0 0 12px; padding: 0; border: 0; font-size: 16px; line-height: 1.6; text-align: left; font-style: normal; }
+.landing-reviews blockquote p { text-align: left; font-style: normal; }
+.landing-reviews .landing-review { padding: 24px; background: #f5f5f5; border-top: 3px solid #ffc326; }
 .landing-reviews figcaption { text-align: left; font-weight: 700; }
 .mobile-call-bar { display: none; }
 .homepage-coverage { text-align: center; }
@@ -83,3 +85,12 @@
   .homepage-coverage .coverage-links li { flex: 1 1 40%; }
   .homepage-coverage .coverage-links a { display: block; padding: 12px 10px; }
 }
+
+.google-review-stars { color: #c49100; font-size: 18px; letter-spacing: 2px; margin: 0 0 8px; line-height: 1; }
+.landing-reviews figcaption span, .google-review-source { display: block; font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: #6b6b6b; }
+.google-rating { text-align: center; margin: 30px 0 0; font-size: 17px; }
+.google-rating span { color: #c49100; }
+.landing-page .google-rating a, .page_testimonials .google-rating a { color: #604400; text-decoration: underline; }
+.page_testimonials .google-review .google-review-stars { display: block; color: #ffc326; }
+.page_testimonials .google-review-source { color: inherit; margin: 4px 0 0; }
+.page_testimonials .google-rating { margin-top: 20px; }
