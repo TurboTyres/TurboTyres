@@ -1,0 +1,96 @@
+.landing-page { background: #fff; color: #333; font-weight: 400; }
+.landing-page a { text-underline-offset: 4px; }
+.landing-page a:focus-visible, .coverage-links a:focus-visible { outline: 3px solid #956900; outline-offset: 5px; }
+.landing-page .skip-link { position: absolute; top: -100px; left: 16px; z-index: 10; padding: 12px; background: #fff; color: #232323; }
+.landing-page .skip-link:focus { top: 12px; }
+.landing-header { padding: 20px 0; background: #232323; }
+.landing-header .container { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.landing-header .container::before, .landing-header .container::after, .landing-grid::before, .landing-grid::after { display: none; }
+.landing-brand { color: #ffc326; font-size: 22px; line-height: 1.25; text-transform: uppercase; }
+.landing-brand img { width: 42px; height: auto; margin-right: 10px; }
+.landing-header nav { display: flex; gap: 24px; flex-wrap: wrap; }
+.landing-header nav a { color: #fff; padding: 10px 0; }
+.landing-hero { background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), #333 url('../images/slide01.jpg') center / cover; text-align: center; color: #fff; padding: 70px 0 64px; }
+.landing-hero h1 { color: #ffc326; font-size: clamp(32px, 4.5vw, 56px); text-transform: uppercase; margin: 8px auto 22px; max-width: 950px; }
+.landing-hero p { max-width: 720px; margin: 0 auto 24px; font-size: 19px; line-height: 1.6; }
+.landing-page .eyebrow { font-size: 14px; letter-spacing: 2px; text-transform: uppercase; }
+.landing-page .call-button { background: #ffc326; color: #232323; border-color: #ffc326; line-height: 1.3; }
+.landing-page .call-button:hover, .landing-page .call-button:focus { background: #fff; border-color: #fff; color: #232323; }
+.landing-page .call-note { font-size: 15px; margin: 18px auto 0; }
+.landing-strip { background: #ffc326; color: #232323; padding: 20px 0; text-align: center; }
+.landing-strip .container { display: flex; justify-content: space-around; gap: 15px; flex-wrap: wrap; }
+.landing-section { padding: 65px 0; }
+.landing-section h2 { color: #232323; font-size: 32px; text-transform: uppercase; }
+.landing-section h3 { color: #232323; font-size: 22px; }
+.landing-section .section_header { margin-bottom: 32px; }
+.landing-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 55px; align-items: start; }
+.landing-service-list { padding-left: 22px; margin: 20px 0; }
+.landing-service-list li { margin-bottom: 10px; }
+.landing-photo { width: 100%; max-height: 350px; object-fit: cover; }
+.landing-muted { background: #f5f5f5; }
+.landing-steps { padding-left: 22px; }
+.landing-steps li { padding-left: 8px; margin-bottom: 22px; }
+.landing-steps strong { display: block; margin-bottom: 5px; color: #232323; }
+.landing-page .text-link { color: #604400; text-decoration: underline; }
+.landing-page .landing-review { max-width: 760px; margin: 0 auto; }
+.landing-review blockquote { color: #333; }
+.landing-review figcaption { text-align: center; color: #555; }
+.landing-page .landing-footer { background: #232323; color: #eee; padding: 48px 0; }
+.landing-footer a { color: #ffc326; }
+.landing-footer h2 { color: #fff; font-size: 24px; }
+.landing-footer .footer-contact { font-size: 21px; line-height: 1.8; }
+.coverage-links { display: flex; flex-wrap: wrap; gap: 12px 28px; padding: 0; list-style: none; }
+.coverage-links a { display: inline-block; padding: 10px 0; text-decoration: underline; }
+.landing-footer .coverage-links { margin: 18px 0; }
+.homepage-coverage { padding: 65px 0; }
+.homepage-coverage a { color: #604400; }
+@media (max-width: 767px) {
+  .landing-header .container { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .landing-brand { font-size: 20px; }
+  .landing-header nav { gap: 26px; }
+  .landing-hero { padding: 42px 0; }
+  .landing-hero p { font-size: 17px; }
+  .landing-grid { grid-template-columns: 1fr; gap: 28px; }
+  .landing-section { padding: 42px 0; }
+  .landing-section h2 { font-size: 27px; }
+  .landing-photo { max-height: 280px; }
+  .landing-footer { padding-bottom: 30px; }
+  .landing-strip .container { flex-direction: column; gap: 8px; }
+}
+
+.landing-hero .text-link { color: #f7cf45; }
+.landing-hero .text-link:hover, .landing-hero .text-link:focus { color: #fff; }
+
+.landing-reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 30px; }
+.landing-reviews .landing-review { margin: 0; }
+.landing-reviews blockquote { margin: 0 0 12px; padding: 0; border: 0; font-size: 16px; line-height: 1.6; text-align: left; font-style: normal; }
+.landing-reviews blockquote p { text-align: left; font-style: normal; }
+.landing-reviews .landing-review { padding: 24px; background: #f5f5f5; border-top: 3px solid #ffc326; }
+.landing-reviews figcaption { text-align: left; font-weight: 700; }
+.mobile-call-bar { display: none; }
+.homepage-coverage { text-align: center; }
+.homepage-coverage p { max-width: 720px; margin: 0 auto; }
+.homepage-coverage .coverage-links { justify-content: center; margin: 30px 0 0; }
+.homepage-coverage .coverage-links a { padding: 12px 26px; border: 2px solid #ffc326; color: #232323; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; }
+.homepage-coverage .coverage-links a:hover, .homepage-coverage .coverage-links a:focus { background: #ffc326; color: #232323; }
+@media (max-width: 991px) {
+  .landing-reviews { grid-template-columns: 1fr; }
+}
+@media (max-width: 767px) {
+  .mobile-call-bar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 16px 16px calc(16px + env(safe-area-inset-bottom)); background: #ffc326; color: #232323; font-size: 18px; font-weight: 700; text-align: center; text-transform: uppercase; box-shadow: 0 -2px 10px rgba(0, 0, 0, .25); }
+  .mobile-call-bar:hover, .mobile-call-bar:focus { color: #232323; text-decoration: none; }
+  .mobile-call-bar:focus-visible { outline: 3px solid #232323; outline-offset: -6px; }
+  .landing-page .landing-footer { padding-bottom: 100px; }
+  .homepage-coverage .coverage-links { gap: 12px; }
+  .homepage-coverage .coverage-links li { flex: 1 1 40%; }
+  .homepage-coverage .coverage-links a { display: block; padding: 12px 10px; }
+}
+
+.google-review-stars { color: #c49100; font-size: 18px; letter-spacing: 2px; margin: 0 0 8px; line-height: 1; }
+.landing-reviews figcaption span, .google-review-source { display: block; font-size: 13px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: #6b6b6b; }
+.google-rating { text-align: center; margin: 30px 0 0; font-size: 17px; }
+.google-rating span { color: #c49100; }
+.landing-page .google-rating a, .page_testimonials .google-rating a { color: #604400; text-decoration: underline; }
+.page_testimonials .google-review .google-review-stars { display: block; color: #ffc326; }
+.page_testimonials .google-review-source { color: inherit; margin: 4px 0 0; }
+.page_testimonials .google-rating { margin-top: 20px; }
