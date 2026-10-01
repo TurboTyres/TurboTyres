@@ -18,10 +18,11 @@ Open http://127.0.0.1:8765/. The local server does not automatically use `404.ht
 - `mobile-tyres-{hull,driffield,scarborough,beverley}.html`: individual service-area pages.
 - `mobile-tyre-fitting.html`: general advertising destination.
 - `404.html`: branded missing-page response, with root-relative assets for nested URLs.
-- `css/site.css`: the only stylesheet. All seven pages share its header, hero, sections, reviews, footer and the phone-width Call/WhatsApp bar. No page needs JavaScript.
+- `css/site.css`: the only stylesheet. All seven pages share its header, hero, sections, reviews, footer and the phone-width Call/WhatsApp bar.
+- `js/site.js`: the only script. On phones it keeps the Call/WhatsApp bar hidden while the hero buttons are on screen; without it the bar is always shown.
 - `fonts/archivo/`: self-hosted Archivo variable font (widths 100–125%, weights 400–800, Latin subset) with its SIL Open Font License. Headings use the 125% width.
 - `favicon.ico` (16, 32 and 48px), `icon.svg` and `apple-touch-icon.png`: site icon, a tyre tread in amber and charcoal. `images/logo-512.png` is the same mark for structured data.
-- `images/van-*.jpg`: Craig's van photos, also used as Google Ads image assets. `images/og-van.jpg` is the share preview.
+- `images/van-*.jpg` and `images/on-the-job-*.jpg`: Craig's own photos of his van and a job. `images/og-van.jpg` is the share preview.
 - `sitemap.xml` and `robots.txt`: public indexing information. Update the sitemap when adding or removing public pages.
 - `CNAME`: production domain. Preserve it unless an intentional domain change is approved.
 
