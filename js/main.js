@@ -283,26 +283,27 @@ function documentReadyInit() {
 		} //eof sumbenu check
 	});
 	if ($sideHeader.length) {
-		jQuery('.toggle_menu_side').on('click', function(){
-			var $thisToggler = jQuery(this);
-			if ($thisToggler.hasClass('header-slide')) {
-				$sideHeader.toggleClass('active-slide-side-header');
-			} else {
-				if($thisToggler.parent().hasClass('header_side_right')) {
-					$body.toggleClass('active-side-header slide-right');
-				} else {
-					$body.toggleClass('active-side-header');
-				}
+		var $menuToggle = jQuery('.toggle_menu_side');
+		var menuPanel = document.getElementById('site-menu');
+		function setSideMenu(open) {
+			$body.toggleClass('active-side-header', open);
+			$menuToggle.attr('aria-expanded', String(open)).attr('aria-label', open ? 'Close menu' : 'Open menu');
+			menuPanel.inert = !open;
+		}
+		$menuToggle.on('click', function() {
+			setSideMenu($menuToggle.attr('aria-expanded') !== 'true');
+		});
+		$body.on('click', function(e) {
+			if (!jQuery(e.target).closest('.page_header_side').length) setSideMenu(false);
+		});
+		jQuery(menuPanel).find('a').on('click', function() { setSideMenu(false); });
+		jQuery(document).on('keydown', function(e) {
+			if (e.key === 'Escape' && $menuToggle.attr('aria-expanded') === 'true') {
+				setSideMenu(false);
+				$menuToggle.trigger('focus');
 			}
 		});
-		//hidding side header on click outside header
-		$body.on('click', function( e ) {
-			if ( !(jQuery(e.target).closest('.page_header_side').length) && !($sideHeader.hasClass('page_header_side_sticked')) ) {
-				$sideHeader.removeClass('active-slide-side-header');
-				$body.removeClass('active-side-header slide-right');
-			}
-		});
-	} //sideHeader check
+	}
 
 	//1 and 2/3/4th level mainmenu offscreen fix
 	var MainWindowWidth = jQuery(window).width();
@@ -920,6 +921,20 @@ function windowLoadInit() {
 				
 			} //filters
 
+			function labelCarouselControls() {
+				$carousel.find('.owl-prev').attr({role: 'button', tabindex: '0', 'aria-label': 'Previous item'});
+				$carousel.find('.owl-next').attr({role: 'button', tabindex: '0', 'aria-label': 'Next item'});
+				$carousel.find('.owl-dot').each(function(index) {
+					jQuery(this).attr({role: 'button', tabindex: '0', 'aria-label': 'Show slide ' + (index + 1)});
+				});
+			}
+			$carousel.on('refreshed.owl.carousel', labelCarouselControls);
+			$carousel.on('keydown', '.owl-prev, .owl-next, .owl-dot', function(e) {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					jQuery(this).trigger('click');
+				}
+			});
 			$carousel.owlCarousel({
 				loop: loop,
 				margin: margin,
@@ -945,6 +960,7 @@ function windowLoadInit() {
 				},
 			})
 			.addClass(themeClass);
+			labelCarouselControls();
 			if(center) {
 				$carousel.addClass('owl-center');
 			}
@@ -1025,54 +1041,6 @@ function windowLoadInit() {
 		}
 
 	} //appear check
-
-	//Flickr widget
-	// use http://idgettr.com/ to find your ID
-	if (jQuery().jflickrfeed) {
-		var $flickr = jQuery("#flickr, .flickr_ul");
-		if ( $flickr.length ) {
-			if ( ! ( $flickr.hasClass('flickr_loaded') ) ) {
-				$flickr.jflickrfeed({
-					flickrbase: "http://api.flickr.com/services/feeds/",
-					limit: 4,
-					qstrings: {
-						id: "131791558@N04"
-					},
-					itemTemplate: '<a href="{{image_b}}" data-gal="prettyPhoto[pp_gal]"><li><img alt="{{title}}" src="{{image_m}}" /></li></a>'
-				}, function(data) {
-					$flickr.find('a').prettyPhoto({
-						hook: 'data-gal',
-						theme: 'facebook'
-					});
-				}).addClass('flickr_loaded');
-			}
-		}
-	}
-
-	// Instagram widget
-	if(jQuery().spectragram) {
-		var Spectra = {
-			instaToken: '3905738328.60c782d.b65ed3f058d64e6ab32c110c6ac12d9b',
-			instaID: '60c782dfecaf4050b59ff4c159246641',
-
-			init: function () {
-				jQuery.fn.spectragram.accessData = {
-					accessToken: this.instaToken,
-					clientID: this.instaID
-				};
-
-				//available methods: getUserFeed, getRecentTagged
-				jQuery('.instafeed').spectragram('getRecentTagged',{
-					max: 8,
-					//pass username if you are using getUserFeed method
-					query: 'grey',
-					wrapEachWith: '<div class="photo">'
-				});
-			}
-		}
-
-		Spectra.init();
-	}
 
 	//video images preview - from WP
 	jQuery('.embed-placeholder').each(function(){

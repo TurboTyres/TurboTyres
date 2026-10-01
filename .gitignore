@@ -1,0 +1,5 @@
+.idea/
+*.iml
+.scratch/
+Thumbs.db
+.DS_Store
