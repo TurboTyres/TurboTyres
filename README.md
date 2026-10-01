@@ -25,8 +25,6 @@ Open http://127.0.0.1:8765/. The local server does not automatically use `404.ht
 - `sitemap.xml` and `robots.txt`: public indexing information. Update the sitemap when adding or removing public pages.
 - `CNAME`: production domain. Preserve it unless an intentional domain change is approved.
 
-The original 2023 theme files (`css/main.css`, `css/bootstrap.min.css`, `css/animations.css`, `css/fonts.css`, `js/`, `img/`, `fonts/` other than `archivo/`, and the old images in `images/faces`, `images/gallery` and `images/icons`, plus `images/logo.png` and `images/slide01.jpg`) are no longer referenced by any page. They are kept until their removal is approved.
-
 ## Editing and checking
 
 Keep phone numbers, factual services and contact details consistent across all six public pages. The WhatsApp links use the mobile number with a pre-filled message. Service areas are not separate branch addresses. Confirm availability, prices and timing by phone; do not invent guarantees or testimonials.
