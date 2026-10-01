@@ -5,19 +5,31 @@
     <title>Page not found | Turbo Tyres Hull</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/landing-pages.css">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preload" href="/fonts/archivo/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css">
 </head>
-<body class="landing-page">
-<header class="landing-header"><div class="container"><a class="landing-brand" href="/"><img src="/images/logo.png" width="42" height="42" alt="">Turbo Tyres Hull</a></div></header>
-<main class="landing-hero" id="main"><div class="container">
-    <p class="eyebrow">404 · Page not found</p>
-    <h1>Let’s get you back on the road</h1>
-    <p>This page may have moved, or the address may be incorrect. Return to our homepage to find our services and coverage areas.</p>
-    <p><a class="theme_button call-button" href="/">Go to the homepage</a></p>
-    <p>Need help with a tyre? <a class="text-link" href="tel:+447354772107">Call 07354 772107</a>.</p>
-</div></main>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+    <div class="container">
+        <a class="brand" href="/"><img src="/icon.svg" width="40" height="40" alt="">Turbo Tyres Hull</a>
+        <nav class="site-nav" aria-label="Main navigation"><a href="/">Home</a><a href="/#services">Services</a><a href="/#areas">Areas</a><a href="/#contact">Contact</a></nav>
+    </div>
+</header>
+<main id="main" tabindex="-1">
+    <section class="hero not-found" aria-labelledby="page-title">
+        <div class="container">
+            <h1 id="page-title">Let’s get you back on the road</h1>
+            <p class="hero-lead">This page doesn’t exist or has moved (error 404). The homepage has Craig’s services and the areas he covers.</p>
+            <div class="hero-actions">
+                <a class="button call-button" href="/">Go to the homepage</a>
+            </div>
+            <p class="call-note">Need help with a tyre? <a href="tel:+447354772107">Call 07354 772107</a>.</p>
+        </div>
+    </section>
+</main>
 </body>
 </html>
