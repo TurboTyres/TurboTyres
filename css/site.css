@@ -55,7 +55,6 @@ h3 { font-size: 21px; font-weight: 700; line-height: 1.3; }
 .hero a:not(.button):hover { color: #fff; }
 .hero-van { margin: 0; }
 .hero-van img { display: block; width: 100%; aspect-ratio: 10 / 7; object-fit: cover; border-radius: 4px; }
-.hero-van figcaption { margin-top: 12px; color: #bdbdbd; font-size: 15px; }
 
 .button { display: inline-flex; align-items: center; justify-content: center; min-width: 230px; min-height: 56px; padding: 12px 24px; border: 3px solid transparent; border-radius: 4px; font-size: 18px; font-stretch: 112%; font-weight: 700; line-height: 1.2; text-decoration: none; transition: background-color .15s, color .15s, border-color .15s; }
 .call-button { border-color: var(--amber); background: var(--amber); color: var(--charcoal); }
@@ -77,12 +76,10 @@ h3 { font-size: 21px; font-weight: 700; line-height: 1.3; }
 .service-list li::marker { color: var(--amber-ink); }
 .section-photo { display: block; width: 100%; aspect-ratio: 4 / 3; margin-bottom: 28px; object-fit: cover; object-position: center 62%; border-radius: 4px; }
 
-.steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
-.steps li { position: relative; margin-bottom: 24px; padding-left: 56px; counter-increment: step; }
-.steps li::before { content: counter(step); position: absolute; top: -4px; left: 0; color: var(--charcoal); font-size: 36px; font-stretch: 125%; font-weight: 800; line-height: 1; }
-.steps strong { display: block; margin-bottom: 4px; color: var(--charcoal); }
-.steps-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
-.steps-row li { margin-bottom: 0; }
+.checklist { margin: 0; padding: 0; list-style: none; }
+.checklist li { margin-bottom: 20px; padding-left: 18px; border-left: 3px solid var(--amber); }
+.checklist li:last-child { margin-bottom: 0; }
+.checklist strong { display: block; margin-bottom: 2px; color: var(--charcoal); }
 
 .van-photos { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; margin-top: 32px; }
 .van-photos img { display: block; width: 100%; height: 380px; object-fit: cover; border-radius: 4px; }
@@ -126,8 +123,7 @@ h3 { font-size: 21px; font-weight: 700; line-height: 1.3; }
   .hero-grid, .split, .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .hero-lead { font-size: 19px; }
   .section { padding: 48px 0; }
-  .reviews-google, .reviews-customer, .steps-row { grid-template-columns: minmax(0, 1fr); }
-  .steps-row li { margin-bottom: 8px; }
+  .reviews-google, .reviews-customer { grid-template-columns: minmax(0, 1fr); }
   .van-photos { grid-template-columns: minmax(0, 1fr); }
   .van-photos img { height: auto; }
 }
@@ -144,6 +140,9 @@ h3 { font-size: 21px; font-weight: 700; line-height: 1.3; }
   .mobile-call-bar .mobile-whatsapp { flex: 0 0 auto; background: var(--charcoal); color: #fff; }
   .mobile-call-bar .mobile-whatsapp:focus-visible { outline-color: var(--whatsapp); }
   .mobile-whatsapp .whatsapp-icon { background-color: var(--whatsapp); }
+  .mobile-call-bar { transition: transform .2s ease-out; }
+  .mobile-call-bar.is-hidden { visibility: hidden; transform: translateY(110%); }
+  .reviews-customer .review:nth-child(n+2) { display: none; }
   .site-footer { padding-bottom: 110px; }
 }
 
@@ -152,5 +151,5 @@ h3 { font-size: 21px; font-weight: 700; line-height: 1.3; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .button { transition: none; }
+  .button, .mobile-call-bar { transition: none; }
 }
