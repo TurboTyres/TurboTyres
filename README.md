@@ -15,10 +15,10 @@ Open http://127.0.0.1:8765/. The local server does not automatically use `404.ht
 ## Pages and assets
 
 - `index.html`: homepage with services, how it works, the van, reviews, areas and contact details.
-- `mobile-tyres-{hull,driffield,scarborough,beverley}.html`: individual service-area pages.
+- `mobile-tyres-{hull,driffield,scarborough,beverley,bridlington}.html`: individual service-area pages.
 - `mobile-tyre-fitting.html`: general advertising destination.
 - `404.html`: branded missing-page response, with root-relative assets for nested URLs.
-- `css/site.css`: the only stylesheet. All seven pages share its header, hero, sections, reviews, footer and the phone-width Call/WhatsApp bar.
+- `css/site.css`: the only stylesheet. All eight pages share its header, hero, sections, reviews, footer and the phone-width Call/WhatsApp bar.
 - `js/site.js`: the only script. On phones it keeps the Call/WhatsApp bar hidden while the hero buttons are on screen; without it the bar is always shown.
 - `fonts/archivo/`: self-hosted Archivo variable font (widths 100–125%, weights 400–800, Latin subset) with its SIL Open Font License. Headings use the 125% width.
 - `favicon.ico` (16, 32 and 48px), `icon.svg` and `apple-touch-icon.png`: site icon, a tyre tread in amber and charcoal. `images/logo-512.png` is the same mark for structured data.
@@ -28,7 +28,7 @@ Open http://127.0.0.1:8765/. The local server does not automatically use `404.ht
 
 ## Editing and checking
 
-Keep phone numbers, factual services and contact details consistent across all six public pages. The WhatsApp links use the mobile number with a pre-filled message. Service areas are not separate branch addresses. Confirm availability, prices and timing by phone; do not invent guarantees or testimonials.
+Keep phone numbers, factual services and contact details consistent across all seven public pages. The WhatsApp links use the mobile number with a pre-filled message. Service areas are not separate branch addresses. Confirm availability, prices and timing by phone; do not invent guarantees or testimonials.
 
 Before publishing, check direct page URLs, local assets, titles, descriptions, canonicals, sitemap entries and phone links. Test navigation with mouse and keyboard, the Call and WhatsApp links, and layouts at 320, 375 and 1280px. Test the 404 response on the hosted site after deployment.
 
