@@ -6,7 +6,7 @@
  * Accept grants analytics_storage only: the site runs no advertising tags.
  */
 (() => {
-  const MEASUREMENT_ID = "G-XXXXXXXXXX";
+  const MEASUREMENT_ID = "G-FRZ1H1BK9C";
   const STORAGE_KEY = "tt-analytics-consent";
 
   window.dataLayer = window.dataLayer || [];
